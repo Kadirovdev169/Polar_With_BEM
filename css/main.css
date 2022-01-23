@@ -1,0 +1,373 @@
+@font-face {
+  font-family: 'Roboto';
+  src: url('../fonts/Roboto-Bold.woff2') format('woff2'),
+    url('../fonts/Roboto-Bold.woff') format('woff');
+  font-weight: bold;
+  font-style: normal;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: 'Roboto';
+  src: url('../fonts/Roboto-Regular.woff2') format('woff2'),
+    url('../fonts/Roboto-Regular.woff') format('woff');
+  font-weight: normal;
+  font-style: normal;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: 'Roboto';
+  src: url('../fonts/Roboto-Medium.woff2') format('woff2'),
+    url('../fonts/Roboto-Medium.woff') format('woff');
+  font-weight: 500;
+  font-style: normal;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: 'Roboto';
+  src: url('../fonts/Roboto-Black.woff2') format('woff2'),
+    url('../fonts/Roboto-Black.woff') format('woff');
+  font-weight: 900;
+  font-style: normal;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: 'Fredoka One';
+  src: url('../fonts/FredokaOne-Regular.woff2') format('woff2'),
+    url('../fonts/FredokaOne-Regular.woff') format('woff');
+  font-weight: normal;
+  font-style: normal;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: 'Hind Madurai';
+  src: url('../fonts/HindMadurai-Bold.woff2') format('woff2'),
+    url('../fonts/HindMadurai-Bold.woff') format('woff');
+  font-weight: bold;
+  font-style: normal;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: 'Hind Madurai';
+  src: url('../fonts/HindMadurai-Medium.woff2') format('woff2'),
+    url('../fonts/HindMadurai-Medium.woff') format('woff');
+  font-weight: 500;
+  font-style: normal;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: 'Hind Madurai';
+  src: url('../fonts/HindMadurai-Regular.woff2') format('woff2'),
+    url('../fonts/HindMadurai-Regular.woff') format('woff');
+  font-weight: normal;
+  font-style: normal;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: 'Hind Madurai';
+  src: url('../fonts/HindMadurai-Light.woff2') format('woff2'),
+    url('../fonts/HindMadurai-Light.woff') format('woff');
+  font-weight: 300;
+  font-style: normal;
+  font-display: swap;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+  padding: 0;
+  font-family: "Roboto", "Arial", sans-serif;
+  font-weight: normal;
+}
+
+.visually-hidden {
+  clip: rect(0 0 0 0);
+  clip-path: inset(50%);
+  height: 1px;
+  overflow: hidden;
+  position: absolute;
+  white-space: nowrap;
+  width: 1px;
+}
+
+/* header section style */
+
+.site-header {
+  background-color: rgba(242, 206, 218, .3);
+}
+
+.container {
+  width: 1125px;
+  margin: 0 auto;
+}
+
+.header-container {
+  padding: 10px 0;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.site-navbar {
+  display: flex;
+  justify-content: space-between;
+  align-items: baseline;
+}
+
+.site-list {
+  display: flex;
+  justify-content: space-between;
+  list-style: none;
+}
+
+.header__list {
+  margin-right: 172px;
+}
+
+.nav-items-link {
+  padding: 40px;
+  text-decoration: none;
+  transition: .3s ease all;
+}
+
+.nav-items-link:last-child {
+  padding-right: 0;
+}
+
+.header__item-link {
+  font-weight: normal;
+  font-size: 14px;
+  line-height: 16px;
+  color: rgba(21, 1, 1, .6);
+}
+
+.header__item-link:hover {
+  color: #D23166;
+}
+
+.header__item-link--active {
+  font-weight: bold;
+  font-size: 15px;
+  line-height: 18px;
+  color: #D23166;
+}
+
+.main-button {
+  display: inline-block;
+  padding: 14px 50px 13px;
+  font-weight: bold;
+  font-size: 16px;
+  font-family: "Hind Madurai", "Arial", sans-serif;
+  line-height: 22px;
+  color: #FAFAFA;
+  background-color: #D23166;
+  border: 1px solid transparent;
+  border-radius: 5px;
+  text-decoration: none;
+  transition: .3s ease all;
+}
+
+.header__button:hover {
+  background-color: #FAFAFA;
+  color: #D23166;
+  border: 1px solid #D23166;
+}
+
+/* intro section style */
+
+.site-main {
+  margin: 0;
+  padding: 0;
+}
+
+.intro {
+  margin: 0;
+  padding: 0;
+  background-color: rgba(242, 206, 218, .3);
+}
+
+.main-container {
+  width: 1118px;
+  margin: 0 auto;
+}
+
+.intro__container {
+  padding: 186px 0 213px 0;
+  text-align: left;
+  background-image: url(../img/intro-bg-img.png);
+  background-repeat: no-repeat;
+  background-position: calc(50% - 110px + (894px / 2)) center;
+}
+
+.intro__content {
+  width: 665px;
+}
+
+.intro__slogan {
+  margin: 0;
+  padding: 0;
+  display: inline-block;
+  margin-bottom: 6px;
+  font-weight: 500;
+  font-size: 14px;
+  line-height: 16px;
+  letter-spacing: 0.1em;
+  color: #0F0101;
+}
+
+.intro__title {
+  margin: 0;
+  padding: 0;
+  display: inline-block;
+  margin-bottom: 35px;
+  font-weight: normal;
+  font-size: 57.33px;
+  font-family: "Fredoka One", "Arial", sans-serif;
+  line-height: 120.5%;
+  color: #0F0101;
+}
+
+.intro__title-span {
+  color: #D23166;
+}
+
+.intro__description {
+  margin: 0;
+  padding: 0;
+  width: 500px;
+  display: inline-block;
+  margin-bottom: 50px;
+  font-weight: normal;
+  font-size: 18px;
+  font-family: "Hind Madurai", "Arial", sans-serif;
+  line-height: 27px;
+  color: rgba(15, 1, 1, .6);
+}
+
+/* benefits section style */
+
+.benefits__container {
+  padding: 100px 0;
+}
+
+.benefits__list {
+  margin: 0;
+  padding: 0;
+  display: flex;  
+  justify-content: center;
+  align-items: center;
+  flex-wrap: wrap;
+  list-style: none;
+}
+
+.benefit {
+  margin: 0;
+  padding: 0;
+  width: 250px;
+  margin-right: 39px;
+  padding: 100px 26px 27px;
+  border: 1px solid rgba(0, 0, 0, 0.03);
+  border-radius: 7px;
+  text-align: center;
+  transition: .3s ease all;
+}
+
+.benefit:last-child {
+  margin-right: 0;
+}
+
+.benefit:hover {
+  border: transparent;
+  box-shadow: 20px 20px 50px rgba(0, 0, 0, 0.03);
+}
+
+.benefits__shipping {
+  background-image: url(../img/car.svg);
+  background-repeat: no-repeat;
+  background-position: center top 33px;
+}
+
+.benefits__package {
+  background-image: url(../img/fast-delivery.svg);
+  background-repeat: no-repeat;
+  background-position: center top 33px;
+}
+
+.benefits__cash {
+  background-image: url(../img/cash-back.svg);
+  background-repeat: no-repeat;
+  background-position: center top 33px;
+}
+
+.benefits__delivery {
+  background-image: url(../img/fast-delivery.svg);
+  background-repeat: no-repeat;
+  background-position: center top 33px;
+}
+
+.benefit__title {
+  margin-bottom: 9px;
+  font-weight: 600;
+  font-size: 20px;
+  line-height: 28px;
+  color: #000000;
+}
+
+.benefit-descrption {
+  font-weight: normal;
+  font-size: 14px;
+  line-height: 19px;
+  text-align: center;
+  color: rgba(0, 0, 0, .6);
+}
+
+/* oatmea section style */
+
+.oatmea {
+  background-color: #F8EDF0;
+}
+
+.oatmea-container {
+  padding: 141px 0 146px 0;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  position: relative;
+}
+
+.oatmea__text-content {
+  width: 442px;
+}
+
+.oatmea__title {
+  margin-bottom: 16px;
+  font-weight: 600;
+  font-size: 44.2px;
+  line-height: 49px;
+  color: #150101;
+}
+
+.main-description {
+  margin-bottom: 35px;
+  font-weight: normal;
+  font-size: 16px;
+  line-height: 24px;
+  color: rgba(21, 1, 1, .6);
+}
+
+.oatmea__img-content {
+  position: absolute;
+  top: -72px;
+  right: -54px;
+}
+
